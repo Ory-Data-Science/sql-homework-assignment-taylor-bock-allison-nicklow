@@ -1,0 +1,1 @@
+SELECT year, month, day, species_id, weight FROM surveys WHERE weight IS NOT NULL;
