@@ -1,0 +1,1 @@
+SELECT species_id, sex, hindfoot_length, weight FROM surveys;
