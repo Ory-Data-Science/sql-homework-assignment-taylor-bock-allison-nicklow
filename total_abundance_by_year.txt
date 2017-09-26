@@ -1,0 +1,4 @@
+SELECT year, COUNT(species_id)
+FROM surveys
+WHERE species_id IS NOT NULL
+GROUP BY year
