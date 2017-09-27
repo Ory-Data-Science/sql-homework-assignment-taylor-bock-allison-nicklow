@@ -1,0 +1,4 @@
+SELECT surveys.year, surveys.month, surveys.day, species.genus, species.species
+FROM surveys
+JOIN species
+ON surveys.species_id = species.species_id
