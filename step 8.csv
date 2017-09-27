@@ -1,0 +1,2 @@
+SELECT *
+FROM total_abundance2, total_biomass2
