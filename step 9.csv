@@ -1,4 +1,6 @@
-SELECT species.species, species.genus, surveys.year, surveys.month, surveys.day, plots.plot_id, plots.plot_type
-FROM surveys, species
-JOIN plots
-ON surveys.plot_id=plots.plot_id;
+SELECT species_plot_data.species, species_plot_data.genus, species_plot_data.plot_type, species.taxa
+FROM species_plot_data
+JOIN species
+ON species.species=species_plot_data.species
+WHERE species.taxa= "rodent"
+GROUP BY species_plot_data.plot_type;
